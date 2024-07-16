@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "concurrently_hmr_repro_python"
+description = "A reproduction of concurrently.js issues"
+authors = ["Samurai Pizza Cats", "Teenage Mutant Ninja Turtles"]
+version = "0.1"
+packages = [{ include = "main.py" }]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+server = 'main:run'
+
+[tool.poetry.dependencies]
+python = "~3.12"
+uvicorn = "~0.30"
+fastapi = "~0.111"
