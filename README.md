@@ -16,6 +16,18 @@ concurrently --raw --name "backend,frontend" "cd backend && poetry run server" "
 
 Of course, you can run the commands manually to compare how everything runs without concurrently.
 
+To run as a subprocess, run:
+
+```
+python -m run
+```
+
+or in Windows:
+
+```
+py -3.12 -m run
+```
+
 ## Issues
 
 There are a couple of issues I observe in Windows 10:
